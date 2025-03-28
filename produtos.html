@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="style_modais.css">
+    <link rel="stylesheet" href="header_modais.css">
+    <link rel="stylesheet" href="footer_modais.css">
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <img src="" alt="">
+            <h1>Produtos</h1>
+        </div>
+        <div class="links">
+            <nav>
+                <a href="home.html">🏠︎</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <center><button id="novoprod">+ Produto</button></center>
+        <div>
+            <div id="modal" class="modal">
+                <div class="card-modal">
+                    <span class="fechar">&times;</span>
+                    <h2>Adicionar Produto</h2>
+                    <form id="formNovoProd">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                        <label for="desc">Descrição:</label>
+                        <input type="text" id="desc" name="desc" required>
+                        <label for="custo">Custo:</label>
+                        <input type="text" id="custo" name="custo" required>
+                        <label for="valor">Vl. Final:</label>
+                        <input type="text" id="valor" name="valor" required>
+                        <input class="add" type="submit" value="Adicionar">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <table id="tabelaProdutos">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Custo</th>
+                    <th>Vl. Final</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </main>
+</body>
+<script src="produtos.js"></script>
+<footer>
+    <p>&copy; by Maria Caleffi & Skartech☆</p>
+</footer>
+</html>

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Poiret+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height:auto;   
+}
+
+main{
+    margin: 2vw;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    & div{
+        width: 90vw;
+    }
+
+    & .modal{
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        top: 0;
+        left: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto;
+        background-color: rgb(0,0,0); 
+        background-color: rgba(0,0,0,0.4); 
+    }
+
+    & .card-modal{
+        background-color: #fefefe;
+        margin: 15% auto; 
+        padding: 20px;
+        border: 1px solid #888;
+        width: 40vw; 
+        border-radius: 20px;
+        font-family: "Poiret One", cursive;
+        display: block;
+
+        & label{
+            display: block;
+            text-align: center;
+        }
+
+        & input{
+            justify-content: center;
+            width: 36vw;
+            height: 5vh;
+            border-radius: 10px;
+            margin: 1vw;
+            padding-left: 1vw;
+            border-color: #172A3A;
+        }
+    }
+
+    & .fechar{
+        color: #623c3c;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    & .add{
+        font-family: 'Mountains of Christmas', cursive;
+        width: 10vw;
+        height: 5vh;
+        background-color: #172A3A;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        margin: 1vw;
+        cursor: pointer;
+    }
+    
+}
+
+button{
+        width: 6vw;
+        height: 5vh;
+        background-color: #172A3A;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        margin: 1vw;
+        cursor: pointer;
+        font-family: 'Poiret One', cursive;
+    }
+
+table th {
+    padding-right: 8vw;
+    font-family: 'Poiret One', bold;
+}
+
+table tbody{
+    font-family: 'Poiret One', cursive;
+}
+

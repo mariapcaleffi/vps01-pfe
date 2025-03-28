@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Poiret+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poiret One', cursive;
+    background-color: #f0f0f0;
+}
+
+h1{
+    font-size: 3vw;
+    font-family: 'Mountains of Christmas', cursive;
+    color: #172A3A;
+    text-align: center;
+    margin-top: 20px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+    & .botoes{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        
+        & a{
+            text-decoration: none;
+            color: #fff;
+            background-color: #172A3A;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.5vw;
+            transition: background-color 0.3s;
+
+            &:hover{
+                background-color: #001e54;
+            }
+        }
+    }
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 10vw; 
+        margin-top: 10px; 
+    }
+    main .botoes {
+        align-items: center; 
+        gap: 15px; 
+    }
+
+    main .botoes a {
+        font-size: 5vw; 
+        padding: 15px 25px; 
+    }
+
+    footer {
+        position: fixed; 
+        bottom: 0;
+        left: 0;
+        width: 100%; 
+        background-color: #f0f0f0; 
+        padding: 10px 0; 
+    }
+}
